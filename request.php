@@ -10,9 +10,15 @@
     <?php
 // connection to database
 
+<<<<<<< HEAD
 $servername = "localhost:3306";
 $username = "root"; 
 $password = "afo@@1234M#4"; 
+=======
+$servername = "localhost:3307";
+$username = "root"; 
+$password = ""; 
+>>>>>>> 10cb51cb5dcedf30f397eb60affdad98927624a7
 $dbname = "examhall_db";
 
 
@@ -29,6 +35,7 @@ if (!$conn) {
         case 'Loginx':
             login();
             break;
+<<<<<<< HEAD
         case 'loadTimeTable1':
             load_exam1();
             break;
@@ -48,6 +55,8 @@ if (!$conn) {
             Update_exam();
             break;
         
+=======
+>>>>>>> 10cb51cb5dcedf30f397eb60affdad98927624a7
     }
 // login in function
     function login(){
@@ -62,12 +71,19 @@ if (!$conn) {
         $_SESSION["username"] = $row['username'];
         $_SESSION["password"] = $row['password'];
         $_SESSION["Accessability"] = $row['Accessability'];
+<<<<<<< HEAD
         $_SESSION["usertype"] = $row['usertype'];
+=======
+>>>>>>> 10cb51cb5dcedf30f397eb60affdad98927624a7
         
         $count=mysqli_num_rows($result);
         if( $_SESSION["username"] == $username  && $_SESSION["password"] == $password) {
             
+<<<<<<< HEAD
          echo $_SESSION["usertype"];
+=======
+         echo $_SESSION["Accessability"];
+>>>>>>> 10cb51cb5dcedf30f397eb60affdad98927624a7
         
         // header("Location: profile.php");
 
@@ -80,6 +96,7 @@ if (!$conn) {
         $conn->close();
         }
 
+<<<<<<< HEAD
         function load_exam1(){
             // $sql="SELECT * FROM `examtimetable`";            
             // global $conn;
@@ -244,6 +261,10 @@ if (!$conn) {
         }
     ?> 
 
+=======
+       
+    ?>
+>>>>>>> 10cb51cb5dcedf30f397eb60affdad98927624a7
 
 </body>
 </html>
