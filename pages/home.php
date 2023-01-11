@@ -45,14 +45,16 @@
             My timetable
         </p><hr> 
         <div class="sub-menue" id="sub-class">
-            <li id="view">View</li><hr>
+            <li id="view">Lecture</li><hr>
             <li id="create">Create</li><hr>
         </div>
     </div>
-    <iframe src="create.php" frameborder="0" class="frame" id="frame"></iframe>
+    <iframe src="table.php" frameborder="0" class="frame" id="frame"></iframe>
     </div>
     
 
     <script src="../js/home.js"></script>
+    <script src="../js/login.js"></script>
+
 </body>
 </html>

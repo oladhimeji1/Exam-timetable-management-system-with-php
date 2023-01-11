@@ -16,7 +16,7 @@
             <p>Loading, pleass wait...</p>
             </div>
         </div>
-        <table id="tab">
+        <table id="tab2">
             <tr>
                 <th></th>
                 <th>8:00 - 9:00</th>

@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div id="flight" class="content flight">
-            
+<!--             
             <h2>Create personal timetable</h2>
             <fieldset>
                 <legend>Timetable details</legend>
@@ -20,9 +20,9 @@
                     <div>9:00 - 10:00</div>
                     <div>10:00 - 11:00</div>
                     <div>12:00 - 1:00</div>
-                </div>
+                </div> -->
                 <div class="inner-content">
-                    <div><p>Mon</p></div>
+                    <!-- <div><p>Mon</p></div>
                     <div>
                         <select name="mon1" class="user-input" id="mon1">
                             <option value="">-- Code --</option>
@@ -356,31 +356,23 @@
                         </select>
                     </div>
 
-                </div>
+                </div> -->
 
                 <div class="inner-content">
-                    <div><p>Fri</p></div>
+                    <div></div>
                     <div>
-                        <select name="fri1" class="user-input" id="fri1">
-                            <option value="">-- Code --</option>
-                            <option value="COM102">COM102</option>
-                            <option value="USA">USA</option>
-                            <option value="London">London</option>
-                        </select>
-                        <select name="friven1" class="user-input" id="friven1">
-                            <option value="">-- Venue --</option>
-                            <option value="COM102">COM102</option>
-                            <option value="USA">USA</option>
-                            <option value="London">London</option>
-                        </select>
-                        <select name="frisup1" class="user-input" id="frisup1">
-                            <option value="">-- Supervisor --</option>
-                            <option value="COM102">COM102</option>
-                            <option value="USA">USA</option>
-                            <option value="London">London</option>
-                        </select>
+                        <label for="daytime">day/date</label>
+                        <input type="text" id="daytime"><br><br>
+                        <label for="firstperiod">firstperiod</label>
+                        <input type="text" id="firstperiod"><br><br>
+                        <label for="secondperiod">secondperiod</label>
+                        <input type="text" id="secondperiod"><br><br>
+                        <label for="venue">venue</label>
+                        <input type="text" id="venue"><br><br>
+                        <label for="supervisor">supervisor</label>
+                        <input type="text" id="supervisor">
                     </div>
-                    <div>
+                    <!-- <div>
                         <select name="fri2" class="user-input" id="fri2">
                             <option value="">-- Code --</option>
                             <option value="COM102">COM102</option>
@@ -439,7 +431,7 @@
                             <option value="USA">USA</option>
                             <option value="London">London</option>
                         </select>
-                    </div>
+                    </div> -->
                 </div>
 
 
@@ -472,5 +464,7 @@
     </div>
 
     <script src="../js/create.js"></script>
+    <script src="../js/login.js"></script>
+
 </body>
 </html>
