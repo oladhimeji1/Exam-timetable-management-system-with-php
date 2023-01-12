@@ -16,6 +16,7 @@
             <p>Loading, pleass wait...</p>
             </div>
         </div>
+        <button id="truc" style="display">empty</button>
         <table id="tab">
             <tr>
                 <th></th>

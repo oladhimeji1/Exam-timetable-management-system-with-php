@@ -52,13 +52,13 @@ function LoginServer(){
     let username = document.getElementById('username').value;
     console.log(password);
     console.log(username);
+    
     var xhttp = new XMLHttpRequest();
     
     xhttp.onreadystatechange = function(err) {
 
-<<<<<<< HEAD
-        if (this.readyState == 4 && this.status == 200){
-=======
+
+        console.log('dsssssssss');
         if (this.readyState == 0){
             console.log('Not initialised')
         } else if(this.readyState == 1){
@@ -68,7 +68,7 @@ function LoginServer(){
         }else if(this.readyState == 3){
             console.log('req processed')
         } else if (this.readyState == 4 && this.status == 200){
->>>>>>> 10cb51cb5dcedf30f397eb60affdad98927624a7
+
 
          str = xhttp.responseText;
          str = str.replace(/<\/?[^>]+>/gi, '');
@@ -77,7 +77,6 @@ function LoginServer(){
          
          console.log(str);
          // checking usertype {
-<<<<<<< HEAD
          if(str=="student"){
             sessionStorage.setItem('str', str);
             
@@ -93,33 +92,22 @@ function LoginServer(){
          else if (str=="admin"){
             sessionStorage.setItem('str', str);
             window.location.assign('./pages/home.php')
-=======
-         if(str=="False"){
-            window.location.assign('./pages/home.php')
-            console.log('user');
+
+         
          }
-         else if (str=="True"){
-            window.location.assign('./pages/create.php')
->>>>>>> 10cb51cb5dcedf30f397eb60affdad98927624a7
-            console.log("admin")
-         }
-         else{
-            console.log('you are not a student')
-         }
-         //}
         //  accessLevel = str;
         //  console.log(phone);
          } else {
             console.log('Not Sent');
         }
-    }
+    };
       xhttp.open("Get", "request.php?opr=Loginx" + "&password=" + password + "&username=" +username, true);
       xhttp.send();
     
    
 
    
-<<<<<<< HEAD
+
 }
 
 window.onload= function(){
@@ -164,6 +152,6 @@ window.onload= function(){
 // xhttp.send();
 
 // }
-=======
-}
->>>>>>> 10cb51cb5dcedf30f397eb60affdad98927624a7
+
+
+
