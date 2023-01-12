@@ -238,11 +238,12 @@ function updateExam(){
         
         if (this.readyState == 4 && this.status == 200){
 
-            // str = xhttp.responseText;
-            // str = str.replace(/<\/?[^>]+>/gi, '');
-            // str = str.trim(str.replace('Ajax',''));
-            // str = $.trim(str.replace('Document',''));
-            // console.log(str);
+            str = xhttp.responseText;
+            str = str.replace(/<\/?[^>]+>/gi, '');
+            str = str.trim(str.replace('Ajax',''));
+            str = $.trim(str.replace('Document',''));
+
+            console.log(str);
             
 
             // var obj = JSON.parse(str)
@@ -251,9 +252,9 @@ function updateExam(){
             // document.getElementsByClassName('noRec').innerHTML = '';
             //document.getElementById("tab").innerHTML = "<tr><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th></tr>" + xhttp.responseText;
         } else {
-
+          console.log('not')
         }
-    };
+    }
 
 xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&daytimex=" + daytimex +
  "&firstperiodx=" + firstperiodx + "&secondperiodx=" + secondperiodx +
