@@ -122,7 +122,9 @@ window.onload= function(){
    
    }
    else{
+    $("#truc").show();
     loadTimeTable4();
+
    }
     //loadTimeTable1();
 }

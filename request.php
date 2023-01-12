@@ -48,6 +48,9 @@ if (!$conn) {
         case 'updatexam':
             Update_exam();
             break;
+        case 'cleartable':
+            cleartable();
+            break;
         
 
     }
@@ -249,6 +252,24 @@ if (!$conn) {
 
             $conn->close();
         }
+        function cleartable(){
+           
+            global $conn;
+        
+            //$result = $conn->query($sql);
+        
+            
+            $sql = "TRUNCATE TABLE  examtimetable";
+
+            if ($conn->query($sql) === TRUE) {
+                echo "you have successively empty the table";
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+
+            $conn->close();
+        }
+    
     ?> 
 
        

@@ -242,6 +242,8 @@ function updateExam(){
             // str = str.replace(/<\/?[^>]+>/gi, '');
             // str = str.trim(str.replace('Ajax',''));
             // str = $.trim(str.replace('Document',''));
+            // console.log(str);
+            
 
             // var obj = JSON.parse(str)
             // console.log(obj.Sno);
