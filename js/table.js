@@ -70,7 +70,7 @@ function loadTimeTable1(){
             console.log(str);
             // console.log(xhttp.responseText);
             // document.getElementsByClassName('noRec').innerHTML = '';
-            document.getElementById("tab").innerHTML = "<tr<th>Date</th><th>Day</th><th>Time</th><th>Course</th><th>Venue</th><th>Supervisor</th></tr>" + xhttp.responseText;
+            document.getElementById("tab").innerHTML = "<tr><th>Date</th><th>Day</th><th>Time</th><th>Course</th><th>Venue</th></tr>" + xhttp.responseText;
         } else {
 
         }
