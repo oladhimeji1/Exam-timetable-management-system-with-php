@@ -118,7 +118,7 @@ if (!$conn) {
                     echo "<td>" . $row['Datex'] . "</td>";
                     echo "<td>" . $row['Dayx'] . "</td>";
                     echo "<td>" . $row['Timex'] . "</td>";
-                    echo "<td>" . $row['course'] . "</td>";
+                    echo "<td>" . $row['Course'] . "</td>";
                     echo "<td>" . $row['Venue'] . "</td>";
                     echo "</tr>"; 
                 }
@@ -143,7 +143,7 @@ if (!$conn) {
                         echo "<td>" . $row['Datex'] . "</td>";
                         echo "<td>" . $row['Dayx'] . "</td>";
                         echo "<td>" . $row['Timex'] . "</td>";
-                        echo "<td>" . $row['course'] . "</td>";
+                        echo "<td>" . $row['Course'] . "</td>";
                         echo "<td>" . $row['Venue'] . "</td>";
                         echo "<td>" . $row['Supervisor'] . "</td>";
                         echo "</tr>"; 
@@ -169,7 +169,7 @@ if (!$conn) {
                             echo "<td>" . $row['Datex'] . "</td>";
                             echo "<td>" . $row['Dayx'] . "</td>";
                             echo "<td>" . $row['Timex'] . "</td>";
-                            echo "<td>" . $row['course'] . "</td>";
+                            echo "<td>" . $row['Course'] . "</td>";
                             echo "<td>" . $row['Venue'] . "</td>";
                             echo "<td>" . $row['Supervisor'] . "</td>";
                             echo "</tr>"; 

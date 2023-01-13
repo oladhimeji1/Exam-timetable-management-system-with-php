@@ -155,7 +155,7 @@ function loadTimeTable4(){
             console.log(str);
             // console.log(xhttp.responseText);
             
-            document.getElementById("tab").innerHTML ="<tr><th>S/N</th><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th><th>Venue</th><th>Supervisor</th></tr>" + xhttp.responseText;
+            document.getElementById("tab").innerHTML ="<tr><th>S/N</th><th>Day</th><th>Date</th><th>Time</th><th>Course</th><th>Venue</th><th>Supervisor</th></tr>" + xhttp.responseText;
         } else {
 
         }
