@@ -247,33 +247,33 @@ function updateExam(){
      console.log(venuex);
      console.log(supervisorx);
      
-//     var xhttp = new XMLHttpRequest();
+    var xhttp = new XMLHttpRequest();
         
-//     xhttp.onreadystatechange = function() {
+    xhttp.onreadystatechange = function() {
         
-//         if (this.readyState == 4 && this.status == 200){
+        if (this.readyState == 4 && this.status == 200){
 
-//             str = xhttp.responseText;
-//             str = str.replace(/<\/?[^>]+>/gi, '');
-//             str = str.trim(str.replace('Ajax',''));
-//             str = $.trim(str.replace('Document',''));
+            str = xhttp.responseText;
+            str = str.replace(/<\/?[^>]+>/gi, '');
+            str = str.trim(str.replace('Ajax',''));
+            str = $.trim(str.replace('Document',''));
 
-//             console.log(str);
+            console.log(str);
             
 
-//             // var obj = JSON.parse(str)
-//             // console.log(obj.Sno);
-//             // console.log(xhttp.responseText);
-//             // document.getElementsByClassName('noRec').innerHTML = '';
-//             //document.getElementById("tab").innerHTML = "<tr><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th></tr>" + xhttp.responseText;
-//         } else {
-//           console.log('not')
-//         }
-//     }
+            // var obj = JSON.parse(str)
+            // console.log(obj.Sno);
+            // console.log(xhttp.responseText);
+            // document.getElementsByClassName('noRec').innerHTML = '';
+            //document.getElementById("tab").innerHTML = "<tr><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th></tr>" + xhttp.responseText;
+        } else {
+          console.log('not')
+        }
+    }
 
-// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + datex +
-//  "&dayx=" + dayx + "&timex=" + timex +
-//  "&course=" + course + "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
-// xhttp.send();
+xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + datex +
+ "&dayx=" + dayx + "&timex=" + timex +
+ "&course=" + course + "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
+xhttp.send();
 
 }

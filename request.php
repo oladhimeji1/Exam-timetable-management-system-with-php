@@ -231,9 +231,10 @@ if (!$conn) {
         }
 
         function Update_exam(){
-            $daytimex =  $_REQUEST['daytimex'];
-            $firstperiodx = $_REQUEST['firstperiodx'];
-            $secondperiodx =  $_REQUEST['secondperiodx'];
+            $datex =  $_REQUEST['datex'];
+            $dayx = $_REQUEST['dayx'];
+            $timex = $_REQUEST['timex'];
+            $course =  $_REQUEST['course'];
             $venuex = $_REQUEST['venuex'];
             $supervisorx = $_REQUEST['supervisorx'];
             global $conn;
@@ -241,8 +242,8 @@ if (!$conn) {
             $result = $conn->query($sql);
         
             
-            $sql = "INSERT INTO examtimetable (Datex, Dayx, Timex, Venue, Supervisor)
-            VALUES ('$daytimex','$firstperiodx','$secondperiodx ', '$venuex', '$supervisorx')";
+            $sql = "INSERT INTO examtimetable (Datex, Dayx, Timex, Course, Venue, Supervisor)
+            VALUES ('$datex','$dayx','$timex ', '$course ', '$venuex', '$supervisorx')";
 
             if ($conn->query($sql) === TRUE) {
                 echo "New record created successfully";
