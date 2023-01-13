@@ -241,7 +241,7 @@ if (!$conn) {
             $result = $conn->query($sql);
         
             
-            $sql = "INSERT INTO examtimetable (Daytime, FirstPeriod, SecondPeriod, Venue, Supervisor)
+            $sql = "INSERT INTO examtimetable (datex, FirstPeriod, SecondPeriod, Venue, Supervisor)
             VALUES ('$daytimex','$firstperiodx','$secondperiodx ', '$venuex', '$supervisorx')";
 
             if ($conn->query($sql) === TRUE) {

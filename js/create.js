@@ -7,11 +7,12 @@ var wednesday = document.getElementById('wednesday');
 var thursday = document.getElementById('thursday');
 var friday = document.getElementById('friday');
  
-var daytime = document.getElementById('daytime');
-var firstperiod = document.getElementById('firstperiod');
-var secondperiod = document.getElementById('secondperiod');
-var venue = document.getElementById('venue');
-var supervisor = document.getElementById('supervisor');
+var datex = document.getElementById('datex');
+var dayx = document.getElementById('dayx');
+var timex = document.getElementById('timex');
+var venuex = document.getElementById('venue');
+var supervisorx = document.getElementById('supervisor');
+
 
 var username;
 
@@ -225,40 +226,51 @@ xhttp.send();
 }
 
 function updateExam(){
-    var daytimex =  daytime.value.toUpperCase();
-    var firstperiodx = firstperiod.value.toUpperCase();
-    var secondperiodx = secondperiod.value.toUpperCase(); 
-    var venuex = venue.value.toUpperCase();
-    var supervisorx = supervisor.value.toUpperCase();
-
-    console.log(supervisorx)
-    var xhttp = new XMLHttpRequest();
+     
+    // var firstperiodx = firstperiod.value.toUpperCase();
+    // var secondperiodx = secondperiod.value.toUpperCase(); 
+    // var venuex = venue.value.toUpperCase();
+    // var supervisorx = supervisor.value.toUpperCase();
+    // var datex = document.getElementById('datex');
+    datex =  datex.value.toUpperCase();
+    dayx = dayx.value.toUpperCase();
+    timex = timex.value.toUpperCase();
+    venuex = venuex.value.toUpperCase(); 
+    supervisorx = supervisorx.value.toUpperCase(); 
+    
+     console.log(datex);
+     console.log(dayx);
+     console.log(timex);
+     console.log(venuex);
+     console.log(supervisorx);
+     
+//     var xhttp = new XMLHttpRequest();
         
-    xhttp.onreadystatechange = function() {
+//     xhttp.onreadystatechange = function() {
         
-        if (this.readyState == 4 && this.status == 200){
+//         if (this.readyState == 4 && this.status == 200){
 
-            str = xhttp.responseText;
-            str = str.replace(/<\/?[^>]+>/gi, '');
-            str = str.trim(str.replace('Ajax',''));
-            str = $.trim(str.replace('Document',''));
+//             str = xhttp.responseText;
+//             str = str.replace(/<\/?[^>]+>/gi, '');
+//             str = str.trim(str.replace('Ajax',''));
+//             str = $.trim(str.replace('Document',''));
 
-            console.log(str);
+//             console.log(str);
             
 
-            // var obj = JSON.parse(str)
-            // console.log(obj.Sno);
-            // console.log(xhttp.responseText);
-            // document.getElementsByClassName('noRec').innerHTML = '';
-            //document.getElementById("tab").innerHTML = "<tr><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th></tr>" + xhttp.responseText;
-        } else {
-          console.log('not')
-        }
-    }
+//             // var obj = JSON.parse(str)
+//             // console.log(obj.Sno);
+//             // console.log(xhttp.responseText);
+//             // document.getElementsByClassName('noRec').innerHTML = '';
+//             //document.getElementById("tab").innerHTML = "<tr><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th></tr>" + xhttp.responseText;
+//         } else {
+//           console.log('not')
+//         }
+//     }
 
-xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&daytimex=" + daytimex +
- "&firstperiodx=" + firstperiodx + "&secondperiodx=" + secondperiodx +
- "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
-xhttp.send();
+// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + date +
+//  "&firstperiodx=" + firstperiodx + "&secondperiodx=" + secondperiodx +
+//  "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
+// xhttp.send();
 
 }

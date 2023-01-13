@@ -361,12 +361,12 @@
                 <div class="inner-content">
                     <div></div>
                     <div>
-                        <label for="daytime">day/date</label>
-                        <input type="text" id="daytime"><br><br>
-                        <label for="firstperiod">firstperiod</label>
-                        <input type="text" id="firstperiod"><br><br>
-                        <label for="secondperiod">secondperiod</label>
-                        <input type="text" id="secondperiod"><br><br>
+                        <label for="dayx">day</label>
+                        <input type="text" id="dayx"><br><br>
+                        <label for="datex">date</label>
+                        <input type="date" id="datex"><br><br>
+                        <label for="timex">time</label>
+                        <input type="time" id="timex"><br><br>
                         <label for="venue">venue</label>
                         <input type="text" id="venue"><br><br>
                         <label for="supervisor">supervisor</label>
