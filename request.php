@@ -106,7 +106,7 @@ if (!$conn) {
             // }
             // $conn->close();
             global $conn;
-            $sql = "SELECT * FROM examtimetable";
+            $sql = "SELECT * FROM examtimetable ORDER BY Datex ASC";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
@@ -123,7 +123,7 @@ if (!$conn) {
                     echo "</tr>"; 
                 }
             } else {
-                echo "0 results";
+                echo "TIME TABLE NOT FOUND PLEASE CONTACT YOUR DESK OFFICER";
             }
             $conn->close();
 
@@ -131,7 +131,7 @@ if (!$conn) {
 
             function load_exam2(){
                 global $conn;
-                $sql = "SELECT * FROM examtimetable";
+                $sql = "SELECT * FROM examtimetable ORDER BY Datex ASC";
                 $result = $conn->query($sql);
     
                 if ($result->num_rows > 0) {
@@ -149,7 +149,7 @@ if (!$conn) {
                         echo "</tr>"; 
                     }
                 } else {
-                    echo "0 results";
+                    echo "TIME TABLE NOT FOUND PLEASE CONTACT YOUR DESK OFFICER";
                 }
                 $conn->close();
     
@@ -157,7 +157,7 @@ if (!$conn) {
 
                 function load_exam3(){
                     global $conn;
-                    $sql = "SELECT * FROM examtimetable";
+                    $sql = "SELECT * FROM examtimetable ORDER BY Datex ASC";
                     $result = $conn->query($sql);
         
                     if ($result->num_rows > 0) {
@@ -175,7 +175,7 @@ if (!$conn) {
                             echo "</tr>"; 
                         }
                     } else {
-                        echo "0 results";
+                        echo "TIME TABLE NOT FOUND PLEASE CREATE ONE";
                     }
                     $conn->close();
         
@@ -200,7 +200,7 @@ if (!$conn) {
                     echo "</tr>"; 
                 }
             } else {
-                echo "0 results";
+                echo "TIME TABLE NOT FOUND PLEASE CONTACT YOUR DESK OFFICER";
             }
             $conn->close();
         }
@@ -228,7 +228,7 @@ if (!$conn) {
                 // echo "]";
                 echo json_encode($json_array);
             } else {
-                echo "0 results";
+                echo "TIME TABLE NOT FOUND PLEASE CONTACT YOUR DESK OFFICER";
             }
             $conn->close();
         }

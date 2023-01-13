@@ -276,4 +276,5 @@ xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-ph
  "&course=" + course + "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
 xhttp.send();
 
+window.location.reload();
 }
