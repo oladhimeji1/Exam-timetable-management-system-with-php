@@ -115,9 +115,10 @@ if (!$conn) {
                     // echo "id: " . $row["Daytime"]. " - Name: " . $row["FirstPeriod"]. " " . $row["SecondPeriod"]. "<br>";
                     echo "<tr>";
                 // echo "<td>" . $row['Sno'] . "</td>";
-                    echo "<td>" . $row['Daytime'] . "</td>";
-                    echo "<td>" . $row['FirstPeriod'] . "</td>";
-                    echo "<td>" . $row['SecondPeriod'] . "</td>";
+                    echo "<td>" . $row['Datex'] . "</td>";
+                    echo "<td>" . $row['Dayx'] . "</td>";
+                    echo "<td>" . $row['Timex'] . "</td>";
+                    echo "<td>" . $row['course'] . "</td>";
                     echo "<td>" . $row['Venue'] . "</td>";
                     echo "</tr>"; 
                 }
@@ -139,9 +140,10 @@ if (!$conn) {
                         // echo "id: " . $row["Daytime"]. " - Name: " . $row["FirstPeriod"]. " " . $row["SecondPeriod"]. "<br>";
                         echo "<tr>";
                     // echo "<td>" . $row['Sno'] . "</td>";
-                        echo "<td>" . $row['Daytime'] . "</td>";
-                        echo "<td>" . $row['FirstPeriod'] . "</td>";
-                        echo "<td>" . $row['SecondPeriod'] . "</td>";
+                        echo "<td>" . $row['Datex'] . "</td>";
+                        echo "<td>" . $row['Dayx'] . "</td>";
+                        echo "<td>" . $row['Timex'] . "</td>";
+                        echo "<td>" . $row['course'] . "</td>";
                         echo "<td>" . $row['Venue'] . "</td>";
                         echo "<td>" . $row['Supervisor'] . "</td>";
                         echo "</tr>"; 
@@ -164,9 +166,10 @@ if (!$conn) {
                             // echo "id: " . $row["Daytime"]. " - Name: " . $row["FirstPeriod"]. " " . $row["SecondPeriod"]. "<br>";
                             echo "<tr>";
                             echo "<td>" . $row['a'] . "</td>";
-                            echo "<td>" . $row['Daytime'] . "</td>";
-                            echo "<td>" . $row['FirstPeriod'] . "</td>";
-                            echo "<td>" . $row['SecondPeriod'] . "</td>";
+                            echo "<td>" . $row['Datex'] . "</td>";
+                            echo "<td>" . $row['Dayx'] . "</td>";
+                            echo "<td>" . $row['Timex'] . "</td>";
+                            echo "<td>" . $row['course'] . "</td>";
                             echo "<td>" . $row['Venue'] . "</td>";
                             echo "<td>" . $row['Supervisor'] . "</td>";
                             echo "</tr>"; 
@@ -239,7 +242,7 @@ if (!$conn) {
             $supervisorx = $_REQUEST['supervisorx'];
             global $conn;
         
-            $result = $conn->query($sql);
+            //$result = $conn->query($sql);
         
             
             $sql = "INSERT INTO examtimetable (Datex, Dayx, Timex, Course, Venue, Supervisor)
