@@ -367,6 +367,8 @@
                         <input type="date" id="datex"><br><br>
                         <label for="timex">time</label>
                         <input type="time" id="timex"><br><br>
+                        <label for="course">course</label>
+                        <input type="text" id="course"><br><br>
                         <label for="venue">venue</label>
                         <input type="text" id="venue"><br><br>
                         <label for="supervisor">supervisor</label>

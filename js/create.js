@@ -10,6 +10,7 @@ var friday = document.getElementById('friday');
 var datex = document.getElementById('datex');
 var dayx = document.getElementById('dayx');
 var timex = document.getElementById('timex');
+var course = document.getElementById('course');
 var venuex = document.getElementById('venue');
 var supervisorx = document.getElementById('supervisor');
 
@@ -235,9 +236,11 @@ function updateExam(){
     datex =  datex.value.toUpperCase();
     dayx = dayx.value.toUpperCase();
     timex = timex.value.toUpperCase();
+    course = course.value.toUpperCase(); 
     venuex = venuex.value.toUpperCase(); 
     supervisorx = supervisorx.value.toUpperCase(); 
-    
+
+     console.log(course);
      console.log(datex);
      console.log(dayx);
      console.log(timex);
@@ -268,9 +271,9 @@ function updateExam(){
 //         }
 //     }
 
-// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + date +
-//  "&firstperiodx=" + firstperiodx + "&secondperiodx=" + secondperiodx +
-//  "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
+// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + datex +
+//  "&dayx=" + dayx + "&timex=" + timex +
+//  "&course=" + course + "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
 // xhttp.send();
 
 }
