@@ -83,7 +83,7 @@ if (!$conn) {
         function load_exam1(){
 
             global $conn;
-            $sql = "SELECT * FROM examtimetable";
+            $sql = "SELECT * FROM examtimetable ORDER BY Datex ASC";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
@@ -92,14 +92,15 @@ if (!$conn) {
                     // echo "id: " . $row["Daytime"]. " - Name: " . $row["FirstPeriod"]. " " . $row["SecondPeriod"]. "<br>";
                     echo "<tr>";
                 // echo "<td>" . $row['Sno'] . "</td>";
-                    echo "<td>" . $row['Daytime'] . "</td>";
-                    echo "<td>" . $row['FirstPeriod'] . "</td>";
-                    echo "<td>" . $row['SecondPeriod'] . "</td>";
+                    echo "<td>" . $row['Datex'] . "</td>";
+                    echo "<td>" . $row['Dayx'] . "</td>";
+                    echo "<td>" . $row['Timex'] . "</td>";
+                    echo "<td>" . $row['Course'] . "</td>";
                     echo "<td>" . $row['Venue'] . "</td>";
                     echo "</tr>"; 
                 }
             } else {
-                echo "0 results";
+                echo "TIME TABLE NOT FOUND PLEASE CONTACT YOUR DESK OFFICER";
             }
             $conn->close();
 
@@ -107,7 +108,7 @@ if (!$conn) {
 
             function load_exam2(){
                 global $conn;
-                $sql = "SELECT * FROM examtimetable";
+                $sql = "SELECT * FROM examtimetable ORDER BY Datex ASC";
                 $result = $conn->query($sql);
     
                 if ($result->num_rows > 0) {
@@ -116,15 +117,16 @@ if (!$conn) {
                         // echo "id: " . $row["Daytime"]. " - Name: " . $row["FirstPeriod"]. " " . $row["SecondPeriod"]. "<br>";
                         echo "<tr>";
                     // echo "<td>" . $row['Sno'] . "</td>";
-                        echo "<td>" . $row['Daytime'] . "</td>";
-                        echo "<td>" . $row['FirstPeriod'] . "</td>";
-                        echo "<td>" . $row['SecondPeriod'] . "</td>";
+                        echo "<td>" . $row['Datex'] . "</td>";
+                        echo "<td>" . $row['Dayx'] . "</td>";
+                        echo "<td>" . $row['Timex'] . "</td>";
+                        echo "<td>" . $row['Course'] . "</td>";
                         echo "<td>" . $row['Venue'] . "</td>";
                         echo "<td>" . $row['Supervisor'] . "</td>";
                         echo "</tr>"; 
                     }
                 } else {
-                    echo "0 results";
+                    echo "TIME TABLE NOT FOUND PLEASE CONTACT YOUR DESK OFFICER";
                 }
                 $conn->close();
     
@@ -132,7 +134,7 @@ if (!$conn) {
 
                 function load_exam3(){
                     global $conn;
-                    $sql = "SELECT * FROM examtimetable";
+                    $sql = "SELECT * FROM examtimetable ORDER BY Datex ASC";
                     $result = $conn->query($sql);
         
                     if ($result->num_rows > 0) {
@@ -141,15 +143,16 @@ if (!$conn) {
                             // echo "id: " . $row["Daytime"]. " - Name: " . $row["FirstPeriod"]. " " . $row["SecondPeriod"]. "<br>";
                             echo "<tr>";
                             echo "<td>" . $row['a'] . "</td>";
-                            echo "<td>" . $row['Daytime'] . "</td>";
-                            echo "<td>" . $row['FirstPeriod'] . "</td>";
-                            echo "<td>" . $row['SecondPeriod'] . "</td>";
+                            echo "<td>" . $row['Datex'] . "</td>";
+                            echo "<td>" . $row['Dayx'] . "</td>";
+                            echo "<td>" . $row['Timex'] . "</td>";
+                            echo "<td>" . $row['Course'] . "</td>";
                             echo "<td>" . $row['Venue'] . "</td>";
                             echo "<td>" . $row['Supervisor'] . "</td>";
                             echo "</tr>"; 
                         }
                     } else {
-                        echo "0 results";
+                        echo "TIME TABLE NOT FOUND PLEASE CREATE ONE";
                     }
                     $conn->close();
         
@@ -174,7 +177,7 @@ if (!$conn) {
                     echo "</tr>"; 
                 }
             } else {
-                echo "0 results";
+                echo "TIME TABLE NOT FOUND PLEASE CONTACT YOUR DESK OFFICER";
             }
             $conn->close();
         }
@@ -193,24 +196,25 @@ if (!$conn) {
                 
                 echo json_encode($json_array);
             } else {
-                echo "0 results";
+                echo "TIME TABLE NOT FOUND PLEASE CONTACT YOUR DESK OFFICER";
             }
             $conn->close();
         }
 
         function Update_exam(){
-            $daytimex =  $_REQUEST['daytimex'];
-            $firstperiodx = $_REQUEST['firstperiodx'];
-            $secondperiodx =  $_REQUEST['secondperiodx'];
+            $datex =  $_REQUEST['datex'];
+            $dayx = $_REQUEST['dayx'];
+            $timex = $_REQUEST['timex'];
+            $course =  $_REQUEST['course'];
             $venuex = $_REQUEST['venuex'];
             $supervisorx = $_REQUEST['supervisorx'];
             global $conn;
         
-            $result = $conn->query($sql);
+            //$result = $conn->query($sql);
         
             
-            $sql = "INSERT INTO examtimetable (Daytime, FirstPeriod, SecondPeriod, Venue, Supervisor)
-            VALUES ('$daytimex','$firstperiodx','$secondperiodx ', '$venuex', '$supervisorx')";
+            $sql = "INSERT INTO examtimetable (Datex, Dayx, Timex, Course, Venue, Supervisor)
+            VALUES ('$datex','$dayx','$timex ', '$course ', '$venuex', '$supervisorx')";
 
             if ($conn->query($sql) === TRUE) {
                 echo "New record created successfully";

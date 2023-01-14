@@ -70,7 +70,7 @@ function loadTimeTable1(){
             console.log(str);
             // console.log(xhttp.responseText);
             // document.getElementsByClassName('noRec').innerHTML = '';
-            document.getElementById("tab").innerHTML = "<tr><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th><th>Venue</th></tr>" + xhttp.responseText;
+            document.getElementById("tab").innerHTML = "<tr><th>Date</th><th>Day</th><th>Time</th><th>Course</th><th>Venue</th></tr>" + xhttp.responseText;
         } else {
 
         }
@@ -129,7 +129,7 @@ function loadTimeTable3(){
             console.log(str);
             // console.log(xhttp.responseText);
             
-            document.getElementById("tab").innerHTML = "<tr><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th><th>Venue</th><th>Supervisor</th></tr>" + xhttp.responseText;
+            document.getElementById("tab").innerHTML = "<tr><th>Date</th><th>Day</th><th>Time</th><th>Course</th><th>Venue</th><th>Supervisor</th></tr>" + xhttp.responseText;
             console.log('call2');
         } else {
 
@@ -156,9 +156,9 @@ function loadTimeTable4(){
             str = $.trim(str.replace('Document',''));
 
             console.log(str);
-            // console.log(xhttp.responseText);
+            console.log(xhttp.responseText);
             
-            document.getElementById("tab").innerHTML ="<tr><th>S/N</th><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th><th>Venue</th><th>Supervisor</th></tr>" + xhttp.responseText;
+            document.getElementById("tab").innerHTML ="<tr><th>S/N</th><th>Date</th><th>Day</th><th>Time</th><th>Course</th><th>Venue</th><th>Supervisor</th></tr>" + xhttp.responseText;
         } else {
 
         }
@@ -170,3 +170,36 @@ xhttp.send();
 
 }
 
+<<<<<<< HEAD
+=======
+$('#truc').click(()=>{
+    var xhttp = new XMLHttpRequest();
+        
+    xhttp.onreadystatechange = function() {
+        
+        if (this.readyState == 4 && this.status == 200){
+
+            str = xhttp.responseText;
+            str = str.replace(/<\/?[^>]+>/gi, '');
+            str = str.trim(str.replace('Ajax',''));
+            str = $.trim(str.replace('Document',''));
+
+            console.log(str);
+            // console.log(xhttp.responseText);
+            
+          
+            var stringx = xhttp.responseText;
+            stringx = stringx.toUpperCase();
+            document.getElementById("tab").innerHTML =stringx.fontsize(10);
+            console.log('call2');
+        } else {
+
+        }
+    };
+
+xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=cleartable", true);
+xhttp.send();
+
+
+});
+>>>>>>> 106bbca12ffe966d0c6786214370974b76c1c5aa

@@ -7,11 +7,13 @@ var wednesday = document.getElementById('wednesday');
 var thursday = document.getElementById('thursday');
 var friday = document.getElementById('friday');
  
-var daytime = document.getElementById('daytime');
-var firstperiod = document.getElementById('firstperiod');
-var secondperiod = document.getElementById('secondperiod');
-var venue = document.getElementById('venue');
-var supervisor = document.getElementById('supervisor');
+var datex = document.getElementById('datex');
+var dayx = document.getElementById('dayx');
+var timex = document.getElementById('timex');
+var course = document.getElementById('course');
+var venuex = document.getElementById('venue');
+var supervisorx = document.getElementById('supervisor');
+
 
 var username;
 
@@ -223,6 +225,7 @@ xhttp.send();
 }
 
 function updateExam(){
+<<<<<<< HEAD
     var daytimex =  daytime.value.toUpperCase();
     var firstperiodx = firstperiod.value.toUpperCase();
     var secondperiodx = secondperiod.value.toUpperCase(); 
@@ -230,6 +233,28 @@ function updateExam(){
     var supervisorx = supervisor.value.toUpperCase();
 
     // console.log(supervisorx)
+=======
+     
+    // var firstperiodx = firstperiod.value.toUpperCase();
+    // var secondperiodx = secondperiod.value.toUpperCase(); 
+    // var venuex = venue.value.toUpperCase();
+    // var supervisorx = supervisor.value.toUpperCase();
+    // var datex = document.getElementById('datex');
+    datex =  datex.value.toUpperCase();
+    dayx = dayx.value.toUpperCase();
+    timex = timex.value.toUpperCase();
+    course = course.value.toUpperCase(); 
+    venuex = venuex.value.toUpperCase(); 
+    supervisorx = supervisorx.value.toUpperCase(); 
+
+     console.log(course);
+     console.log(datex);
+     console.log(dayx);
+     console.log(timex);
+     console.log(venuex);
+     console.log(supervisorx);
+     
+>>>>>>> 106bbca12ffe966d0c6786214370974b76c1c5aa
     var xhttp = new XMLHttpRequest();
         
     xhttp.onreadystatechange = function() {
@@ -247,12 +272,19 @@ function updateExam(){
         }
     }
 
+<<<<<<< HEAD
 xhttp.open("Get", "http://localhost/timetable/request.php?opr=updatexam"  + "&daytimex=" + daytimex +
  "&firstperiodx=" + firstperiodx + "&secondperiodx=" + secondperiodx +
  "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
 // xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&daytimex=" + daytimex +
 //  "&firstperiodx=" + firstperiodx + "&secondperiodx=" + secondperiodx +
 //  "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
+=======
+xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + datex +
+ "&dayx=" + dayx + "&timex=" + timex +
+ "&course=" + course + "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
+>>>>>>> 106bbca12ffe966d0c6786214370974b76c1c5aa
 xhttp.send();
 
+window.location.reload();
 }

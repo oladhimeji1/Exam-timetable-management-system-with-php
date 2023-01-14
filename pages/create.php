@@ -35,6 +35,87 @@
                         <button id="btn-next" class="btn">Submit</button>
                     </div>
 
+<<<<<<< HEAD
+=======
+                </div> -->
+
+                <div class="inner-content">
+                    <div></div>
+                    <div>
+                        <label for="dayx">day</label>
+                        <input type="text" id="dayx"><br><br>
+                        <label for="datex">date</label>
+                        <input type="date" id="datex"><br><br>
+                        <label for="timex">time</label>
+                        <input type="text" id="timex"><br><br>
+                        <label for="course">course</label>
+                        <input type="text" id="course"><br><br>
+                        <label for="venue">venue</label>
+                        <input type="text" id="venue"><br><br>
+                        <label for="supervisor">supervisor</label>
+                        <input type="text" id="supervisor">
+                    </div>
+                    <!-- <div>
+                        <select name="fri2" class="user-input" id="fri2">
+                            <option value="">-- Code --</option>
+                            <option value="COM102">COM102</option>
+                            <option value="USA">USA</option>
+                            <option value="London">London</option>
+                        </select>
+                        <select name="friven2" class="user-input" id="friven2">
+                            <option value="">-- Venue --</option>
+                            <option value="COM102">COM102</option>
+                            <option value="USA">USA</option>
+                            <option value="London">London</option>
+                        </select>
+                        <select name="frisup2" class="user-input" id="frisup2">
+                            <option value="">-- Supervisor --</option>
+                            <option value="COM102">COM102</option>
+                            <option value="USA">USA</option>
+                            <option value="London">London</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="fri3" class="user-input" id="fri3">
+                            <option value="">-- Code --</option>
+                            <option value="COM102">COM102</option>
+                            <option value="USA">USA</option>
+                            <option value="London">London</option>
+                        </select>
+                        <select name="friven3" class="user-input" id="friven3">
+                            <option value="">-- Venue --</option>
+                            <option value="COM102">COM102</option>
+                            <option value="USA">USA</option>
+                            <option value="London">London</option>
+                        </select>
+                        <select name="frisup3" class="user-input" id="frisup3">
+                            <option value="">-- Supervisor --</option>
+                            <option value="COM102">COM102</option>
+                            <option value="USA">USA</option>
+                            <option value="London">London</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="fri4" class="user-input" id="fri4">
+                            <option value="">-- Code --</option>
+                            <option value="COM102">COM102</option>
+                            <option value="USA">USA</option>
+                            <option value="London">London</option>
+                        </select>
+                        <select name="friven4" class="user-input" id="friven4">
+                            <option value="">-- Venue --</option>
+                            <option value="COM102">COM102</option>
+                            <option value="USA">USA</option>
+                            <option value="London">London</option>
+                        </select>
+                        <select name="frisup4" class="user-input" id="frisup4">
+                            <option value="">-- Supervisor --</option>
+                            <option value="COM102">COM102</option>
+                            <option value="USA">USA</option>
+                            <option value="London">London</option>
+                        </select>
+                    </div> -->
+>>>>>>> 106bbca12ffe966d0c6786214370974b76c1c5aa
                 </div>
 
             <!-- <button id="btn-next" class="btn btn-next">Submit</button> -->
