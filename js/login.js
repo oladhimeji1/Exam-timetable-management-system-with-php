@@ -116,9 +116,14 @@ window.onload= function(){
     loadTimeTable3();
    
    }
-   else{
+   else if (str2=="admin"){
     $("#truc").show();
     loadTimeTable4();
+   
+   }
+   else{
+    // $("#truc").show();
+    // loadTimeTable4();
 
    }
     //loadTimeTable1();

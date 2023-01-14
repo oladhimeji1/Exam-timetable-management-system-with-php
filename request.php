@@ -13,8 +13,8 @@
 
 $servername = "localhost:3306";
 $username = "root"; 
-// $password = "afo@@1234M#4"; 
-$password = "Ola-2000@gmail.com"; 
+$password = "afo@@1234M#4"; 
+// $password = "Ola-2000@gmail.com"; 
 $dbname = "examhall_db";
 
 
