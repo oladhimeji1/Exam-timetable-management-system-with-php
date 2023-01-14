@@ -203,12 +203,13 @@ xhttp.send();
 
 
 function todaydatex() {
+   
     var x = new Date()
     var ampm = x.getHours() >= 12 ? ' PM' : ' AM';
     var hrs =  x.getHours()
     var mins = x.getMinutes()
     var secs = x.getSeconds()
-
+    alert('dhddhd');
     if(hrs > 12){
       hrs = hrs - 12;
     }
@@ -221,10 +222,42 @@ function todaydatex() {
       secs = '0' + secs
     }
 
-    var x1 = x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear(); 
-    console.log(x1);
-    var x2 = hrs + ":" +  mins + ":" +  secs + ":" + ampm;
+    var x1 = x.getMonth() + 1+ "-" + x.getDate() + "-" + x.getFullYear();
+    var x1 = x.getFullYear() + "-" + x.getMonth()+ 1 + "-" + x.getDate() ; 
+    
+    //var x2 = hrs + ":" +  mins + ":" +  secs + ":" + ampm;
+    //console.log(x2);
 
-    document.getElementById('divClock').innerHTML = x2;
+    document.getElementById('datex').innerHTML = x1;
+
     //Display_Clock();
+
+    var xhttp = new XMLHttpRequest();
+        
+    xhttp.onreadystatechange = function() {
+        
+        if (this.readyState == 4 && this.status == 200){
+
+            str = xhttp.responseText;
+            str = str.replace(/<\/?[^>]+>/gi, '');
+            str = str.trim(str.replace('Ajax',''));
+            str = $.trim(str.replace('Document',''));
+
+            console.log(str);
+            // console.log(xhttp.responseText);
+            
+          //var tadayN = '2023-01-09'
+            // var stringx = xhttp.responseText;
+            // stringx = stringx.toUpperCase();
+            // document.getElementById("tab").innerHTML =stringx.fontsize(10);
+            // console.log('call2');
+        } else {
+
+        }
+    };
+
+    xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadtoday" , true);
+    xhttp.send();
+
+
  }

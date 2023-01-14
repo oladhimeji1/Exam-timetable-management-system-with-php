@@ -52,6 +52,10 @@ if (!$conn) {
         case 'cleartable':
             cleartable();
             break;
+        case 'loadtoday':
+            loadtoday();
+            break;
+            
         
 
     }
@@ -241,6 +245,33 @@ if (!$conn) {
 
             $conn->close();
         }
+
+        
+        function loadtoday(){
+            global $conn;
+            $sql = "SELECT * FROM examtimetable WHERE Datex= '2023-01-09'  ORDER BY Datex ASC";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                // output data of each row
+                while($row = $result->fetch_assoc()) {
+                    // echo "id: " . $row["Daytime"]. " - Name: " . $row["FirstPeriod"]. " " . $row["SecondPeriod"]. "<br>";
+                    echo "<tr>";
+                    echo "<td>" . $row['a'] . "</td>";
+                    echo "<td>" . $row['Datex'] . "</td>";
+                    echo "<td>" . $row['Dayx'] . "</td>";
+                    echo "<td>" . $row['Timex'] . "</td>";
+                    echo "<td>" . $row['Course'] . "</td>";
+                    echo "<td>" . $row['Venue'] . "</td>";
+                    echo "<td>" . $row['Supervisor'] . "</td>";
+                    echo "</tr>"; 
+                }
+            } else {
+                echo "TIME TABLE NOT FOUND PLEASE CREATE ONE";
+            }
+            $conn->close();
+
+            }
     
     ?> 
 
