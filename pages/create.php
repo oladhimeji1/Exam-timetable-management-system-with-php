@@ -12,113 +12,32 @@
     <div class="container">
         <div id="flight" class="content flight">
 
-                <div class="inner-content">
-                    
-                    <!-- <div> -->
-                    <div>
-                        <label for="daytime">Day / Date</label><br>
-                        <input type="text" class="user-input" placeholder="E.g. Monday / 23-01-2023" id="daytime"><br><br>
-                        <label for="venue">Venue</label> <br>
-                        <input type="text" class="user-input" placeholder="Enter venue" id="venue"><br><br>
-                        
-                    </div>
-                    <div>
-                    <label for="firstperiod">First Period</label> <br>
-                        <input type="text" class="user-input" placeholder="Enter cours code for first period" id="firstperiod"><br><br>
-                        <label for="supervisor">Supervisor</label> <br>
-                        <input type="text" class="user-input" placeholder="Enter supervisor name" id="supervisor"><br><br>
-                    </div>
-                    <div>
-                        <label for="secondperiod">Second Period</label> <br>
-                        <input type="text" class="user-input" placeholder="Enter cours code for second period" id="secondperiod"><br><br><br>
-                        
-                        <button id="btn-next" class="btn">Submit</button>
-                    </div>
-
-<<<<<<< HEAD
-=======
-                </div> -->
-
-                <div class="inner-content">
-                    <div></div>
-                    <div>
-                        <label for="dayx">day</label>
-                        <input type="text" id="dayx"><br><br>
-                        <label for="datex">date</label>
-                        <input type="date" id="datex"><br><br>
-                        <label for="timex">time</label>
-                        <input type="text" id="timex"><br><br>
-                        <label for="course">course</label>
-                        <input type="text" id="course"><br><br>
-                        <label for="venue">venue</label>
-                        <input type="text" id="venue"><br><br>
-                        <label for="supervisor">supervisor</label>
-                        <input type="text" id="supervisor">
-                    </div>
-                    <!-- <div>
-                        <select name="fri2" class="user-input" id="fri2">
-                            <option value="">-- Code --</option>
-                            <option value="COM102">COM102</option>
-                            <option value="USA">USA</option>
-                            <option value="London">London</option>
-                        </select>
-                        <select name="friven2" class="user-input" id="friven2">
-                            <option value="">-- Venue --</option>
-                            <option value="COM102">COM102</option>
-                            <option value="USA">USA</option>
-                            <option value="London">London</option>
-                        </select>
-                        <select name="frisup2" class="user-input" id="frisup2">
-                            <option value="">-- Supervisor --</option>
-                            <option value="COM102">COM102</option>
-                            <option value="USA">USA</option>
-                            <option value="London">London</option>
-                        </select>
-                    </div>
-                    <div>
-                        <select name="fri3" class="user-input" id="fri3">
-                            <option value="">-- Code --</option>
-                            <option value="COM102">COM102</option>
-                            <option value="USA">USA</option>
-                            <option value="London">London</option>
-                        </select>
-                        <select name="friven3" class="user-input" id="friven3">
-                            <option value="">-- Venue --</option>
-                            <option value="COM102">COM102</option>
-                            <option value="USA">USA</option>
-                            <option value="London">London</option>
-                        </select>
-                        <select name="frisup3" class="user-input" id="frisup3">
-                            <option value="">-- Supervisor --</option>
-                            <option value="COM102">COM102</option>
-                            <option value="USA">USA</option>
-                            <option value="London">London</option>
-                        </select>
-                    </div>
-                    <div>
-                        <select name="fri4" class="user-input" id="fri4">
-                            <option value="">-- Code --</option>
-                            <option value="COM102">COM102</option>
-                            <option value="USA">USA</option>
-                            <option value="London">London</option>
-                        </select>
-                        <select name="friven4" class="user-input" id="friven4">
-                            <option value="">-- Venue --</option>
-                            <option value="COM102">COM102</option>
-                            <option value="USA">USA</option>
-                            <option value="London">London</option>
-                        </select>
-                        <select name="frisup4" class="user-input" id="frisup4">
-                            <option value="">-- Supervisor --</option>
-                            <option value="COM102">COM102</option>
-                            <option value="USA">USA</option>
-                            <option value="London">London</option>
-                        </select>
-                    </div> -->
->>>>>>> 106bbca12ffe966d0c6786214370974b76c1c5aa
+            <div class="inner-content">
+                
+                <!-- <div> -->
+                <div>
+                    <label for="dayx">Day</label> <br>
+                    <input type="text" placeholder="E.g. Monday" class="user-input" id="dayx"><br><br>
+                    <label for="datex">Date</label> <br>
+                    <input type="date" class="user-input" id="datex"><br><br>
+                </div>
+                <div>
+                    <label for="timex">Time</label> <br>
+                    <input type="text" placeholder="E.g. 8:00 AM - 10:00 AM" class="user-input" id="timex"><br><br>
+                    <label for="course">Course</label> <br>
+                    <input type="text" placeholder="E.g. COM212" class="user-input" id="course"><br><br>
+                </div>
+                <div>
+                <label for="venue">Venue</label> <br>
+                    <input type="text" placeholder="E.g. BLOCK G" class="user-input" id="venue"><br><br>
+                    <label for="supervisor">Supervisor</label> <br>
+                    <input type="text" placeholder="E.g. Mr. Ola" class="user-input" id="supervisor">
+                  
                 </div>
 
-            <!-- <button id="btn-next" class="btn btn-next">Submit</button> -->
+            </div>
+
+            <button id="btn-next" class="btn btn-next">Submit</button>
         </div>
 
          

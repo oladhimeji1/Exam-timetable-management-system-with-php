@@ -64,7 +64,8 @@ ul{
     list-style-type: none;
 }
 .frame{
-    background: url(../img/aeroplane1.jpg);
+    background: rgb(0, 179, 255);
+    /* background: url(../img/aeroplane1.jpg); */
     position: absolute;
     top: 70px;
     left: 13rem;

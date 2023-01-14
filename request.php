@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php
+
+<?php
 // connection to database
 
 
-$servername = "localhost:3306";
-$username = "root"; 
-// $password = "afo@@1234M#4"; 
-$password = "Ola-2000@gmail.com"; 
+$servername = "localhost:3302";
+$username = "root";
+$password = ""; 
 $dbname = "examhall_db";
 
 
@@ -23,10 +14,10 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-//login();
-    $state = $_REQUEST['opr'];
-// switching request case
 
+$state = $_REQUEST['opr'];
+
+// switching request case
     switch($state){
         case 'Loginx':
             login();
@@ -75,7 +66,7 @@ if (!$conn) {
         }
 
         else{
-            echo  " username or password is not valid";
+            echo  "Username or password is not valid";
         }
         $conn->close();
         }
@@ -243,8 +234,3 @@ if (!$conn) {
         }
     
     ?> 
-
-       
-
-</body>
-</html>

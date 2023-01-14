@@ -32,22 +32,15 @@
 
         <p class="sidebar-item" id="viewrec">
             <i class="fa fa-info-circle"></i> 
-            Examination
+            Exam Timetable
         </p><hr>
-
-        <!-- <p id="reg" class="sidebar-item">
-            <i class="fa fa-user-plus"></i> 
-            Create
-        </p><hr> -->
-        
-        
         <p id="mytime" class="sidebar-item">
             <i class="fa fa-info-circle"></i> 
-            My timetable
+            My timetable <i class="fa fa-angle-down"></i>
         </p><hr> 
         <div class="sub-menue" id="sub-class">
-            <li id="view">Lecture</li><hr>
-            <li id="create">Create</li><hr>
+            <li id="view">Lecture Timetable</li><hr>
+            <li id="create">Create Exam Timetable</li><hr>
         </div>
     </div>
     <iframe src="table.php" frameborder="0" class="frame" id="frame"></iframe>

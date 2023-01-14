@@ -10,49 +10,6 @@ $(document).ready(()=>{
     // loadRecord()   
 })
 
-// const api_url = 'http://localhost:3000/loadrec';
-
-// async function getapi(url){
-//     username = sessionStorage.getItem('username');
-
-//     const _data = { username: username }
-//     console.log(_data)
-//     const response = await fetch(url, {
-//         method: 'POST',
-//         body: JSON.stringify(_data),
-//         headers: {'Content-type': 'application/json; charset=utf-8'}
-//     });
-//     var data = await response.json();
-//     console.log(data);
-//     if(response){
-//         $('#tab').fadeOut();
-//         $('.loadery').fadeIn(100)
-//         $('.loadery').delay(2000)
-//         $('.loadery').fadeOut(200)
-//         $('#tab').fadeIn(300);
-//     }
-//     show(data);
-// }
-// getapi(api_url);
-
-// function show(data){
-//     let tab = `<tr><th>Passport ID</th>
-//     <th>Destination</th><th>Country</th>
-//     <th>Flight Schedule</th><th>Return Schedule</th>
-//     <th>Flight Time</th><th>Seat Number</th><th>Flight Date</th>
-//     <th>Return Date</th><th>Phone</th></tr>`;
-
-//     for(let ol of data){
-//         document.getElementById('tab').innerHTML = tab += `<tr><td>${ol.PassportId}</td><td>${ol.Destination}</td><td>${ol.Country}</td><td>${ol.Depdate}</td><td>${ol.Retdate}</td><td>${ol.Username}</td><td>${ol.Fullname}</td><td>${ol.FlightType}</td><td>${ol.Phone}</td><td>${ol.Phone}</td></tr>`
-//     }
-// }
-
-// examTimeTable for student
-// window.onload = function() {
-//     // console.log('nana');
-//     // loadTimeTable1();
-// }
-
 // this fuction is called in login.js for student exams
 function loadTimeTable1(){
 
@@ -67,7 +24,7 @@ function loadTimeTable1(){
             str = str.trim(str.replace('Ajax',''));
             str = $.trim(str.replace('Document',''));
 
-            console.log(str);
+            // console.log(str);
             // console.log(xhttp.responseText);
             // document.getElementsByClassName('noRec').innerHTML = '';
             document.getElementById("tab").innerHTML = "<tr><th>Date</th><th>Day</th><th>Time</th><th>Course</th><th>Venue</th></tr>" + xhttp.responseText;
@@ -84,7 +41,7 @@ xhttp.send();
 
 
 function loadTimeTable2(){
-    console.log('kkkkkkkkkk');
+    // console.log('kkkkkkkkkk');
     var xhttp = new XMLHttpRequest();
         
     xhttp.onreadystatechange = function() {
@@ -96,7 +53,7 @@ function loadTimeTable2(){
             str = str.trim(str.replace('Ajax',''));
             str = $.trim(str.replace('Document',''));
 
-            console.log(str);
+            // console.log(str);
             // console.log(xhttp.responseText);
             
             document.getElementById("tab2").innerHTML = "<tr><th>Day</th><th>8:30-10:30</th><th>10:30-12:30</th><th>12:30-1:30</th><th>1:30-3:30</th></tr>" + xhttp.responseText;
@@ -126,7 +83,7 @@ function loadTimeTable3(){
             str = str.trim(str.replace('Ajax',''));
             str = $.trim(str.replace('Document',''));
 
-            console.log(str);
+            // console.log(str);
             // console.log(xhttp.responseText);
             
             document.getElementById("tab").innerHTML = "<tr><th>Date</th><th>Day</th><th>Time</th><th>Course</th><th>Venue</th><th>Supervisor</th></tr>" + xhttp.responseText;
@@ -155,8 +112,8 @@ function loadTimeTable4(){
             str = str.trim(str.replace('Ajax',''));
             str = $.trim(str.replace('Document',''));
 
-            console.log(str);
-            console.log(xhttp.responseText);
+            // console.log(str);
+            // console.log(xhttp.responseText);
             
             document.getElementById("tab").innerHTML ="<tr><th>S/N</th><th>Date</th><th>Day</th><th>Time</th><th>Course</th><th>Venue</th><th>Supervisor</th></tr>" + xhttp.responseText;
         } else {
@@ -170,8 +127,6 @@ xhttp.send();
 
 }
 
-<<<<<<< HEAD
-=======
 $('#truc').click(()=>{
     var xhttp = new XMLHttpRequest();
         
@@ -184,7 +139,7 @@ $('#truc').click(()=>{
             str = str.trim(str.replace('Ajax',''));
             str = $.trim(str.replace('Document',''));
 
-            console.log(str);
+            // console.log(str);
             // console.log(xhttp.responseText);
             
           
@@ -197,9 +152,9 @@ $('#truc').click(()=>{
         }
     };
 
-xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=cleartable", true);
+// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=cleartable", true);
+xhttp.open("Get", "http://localhost/timetable/request.php?opr=cleartable", true);
 xhttp.send();
 
 
 });
->>>>>>> 106bbca12ffe966d0c6786214370974b76c1c5aa
