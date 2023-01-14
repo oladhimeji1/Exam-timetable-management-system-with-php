@@ -39,7 +39,7 @@
                 </div> 
 
                 <div class="inner-content">
-                    <!-- <div></div>
+                    <div></div>
                     <div>
                         <label for="dayx">day</label>
                         <input type="text" id="dayx"><br><br>
@@ -53,7 +53,7 @@
                         <input type="text" id="venue"><br><br>
                         <label for="supervisor">supervisor</label>
                         <input type="text" id="supervisor">
-                    </div> -->
+                    </div>
                     <!-- <div>
                         <select name="fri2" class="user-input" id="fri2">
                             <option value="">-- Code --</option>
