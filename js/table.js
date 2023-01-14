@@ -76,8 +76,8 @@ function loadTimeTable1(){
         }
     };
 
-xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable1", true);
-// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable1", true);
+// xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable1", true);
+xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable1", true);
 xhttp.send();
 
 }
@@ -105,8 +105,8 @@ function loadTimeTable2(){
         }
     };
 
-// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable2", true);
-xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable2", true);
+xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable2", true);
+// xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable2", true);
 xhttp.send();
 
 }
@@ -136,8 +136,8 @@ function loadTimeTable3(){
         }
     };
 
-// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable3", true);
-xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable3", true);
+xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable3", true);
+// xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable3", true);
 xhttp.send();
 
 }
@@ -164,8 +164,8 @@ function loadTimeTable4(){
         }
     };
 
-xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable4", true);
-// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable4", true);
+// xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable4", true);
+xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable4", true);
 xhttp.send();
 
 }
