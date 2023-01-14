@@ -54,3 +54,10 @@ td{
         transform: rotate(360deg);
     }
 }
+.today{
+    background-color: white;
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-around;
+    padding: 10px 20px;
+}

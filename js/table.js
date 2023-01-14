@@ -76,7 +76,8 @@ function loadTimeTable1(){
         }
     };
 
-xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable1", true);
+xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable1", true);
+// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable1", true);
 xhttp.send();
 
 }
@@ -104,7 +105,8 @@ function loadTimeTable2(){
         }
     };
 
-xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable2", true);
+// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable2", true);
+xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable2", true);
 xhttp.send();
 
 }
@@ -134,7 +136,8 @@ function loadTimeTable3(){
         }
     };
 
-xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable3", true);
+// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable3", true);
+xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable3", true);
 xhttp.send();
 
 }
@@ -161,35 +164,9 @@ function loadTimeTable4(){
         }
     };
 
-xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable4", true);
+xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable4", true);
+// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable4", true);
 xhttp.send();
 
 }
 
-$('#truc').click(()=>{
-    var xhttp = new XMLHttpRequest();
-        
-    xhttp.onreadystatechange = function() {
-        
-        if (this.readyState == 4 && this.status == 200){
-
-            str = xhttp.responseText;
-            str = str.replace(/<\/?[^>]+>/gi, '');
-            str = str.trim(str.replace('Ajax',''));
-            str = $.trim(str.replace('Document',''));
-
-            console.log(str);
-            // console.log(xhttp.responseText);
-            
-            document.getElementById("tab").innerHTML = "<tr><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th><th>Venue</th><th>Supervisor</th></tr>" + xhttp.responseText;
-            console.log('call2');
-        } else {
-
-        }
-    };
-
-xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=cleartable", true);
-xhttp.send();
-
-
-});

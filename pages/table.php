@@ -16,51 +16,23 @@
             <p>Loading, pleass wait...</p>
             </div>
         </div>
-        <button id="truc" style="display:none;">empty</button>
-        <table id="tab">
-            <tr>
-                <th></th>
-                <th>8:00 - 9:00</th>
-                <th>9:00 - 10:00</th>
-                <th>8:00 - 9:00</th>
-                <th>10:00 - 11:00</th>
-            </tr>
-            <tr>
-                <td>Mon</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Tue</td>
-                <td>Com102 / LLR1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Wed</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Thur</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Fri</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+        <div class="today" id="today">
+            <div>
+                <p id="">Today, Monday</p>
+                <p id="datex">23-01-2023</p>
+            </div>
+            <hr>
+            <div>
+                <p id="firstperiod">MTH 101</p>
+                <p id="secondperiod">MTH 102</p>
+            </div>
+            <hr>
+            <div>
+                <p id="firsttime">08:00 - 10:00</p>
+                <p id="secondtime">11:00 - 01:00</p>
+            </div>
+        </div>
+        <table id="tab"></table>
     </div>
 
     

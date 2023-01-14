@@ -13,7 +13,8 @@
 
 $servername = "localhost:3306";
 $username = "root"; 
-$password = "afo@@1234M#4"; 
+// $password = "afo@@1234M#4"; 
+$password = "Ola-2000@gmail.com"; 
 $dbname = "examhall_db";
 
 
@@ -68,19 +69,9 @@ if (!$conn) {
         $_SESSION["Accessability"] = $row['Accessability'];
         $_SESSION["usertype"] = $row['usertype'];
 
-        
         $count=mysqli_num_rows($result);
         if( $_SESSION["username"] == $username  && $_SESSION["password"] == $password) {
-            
-
          echo $_SESSION["usertype"];
-
-         //echo $_SESSION["Accessability"];
-
-        
-        // header("Location: profile.php");
-
-         
         }
 
         else{
@@ -89,22 +80,8 @@ if (!$conn) {
         $conn->close();
         }
 
-
         function load_exam1(){
-            // $sql="SELECT * FROM `examtimetable`";            
-            // global $conn;
-            // $result = mysqli_query($conn,$sql);
-            // $row  = mysqli_fetch_array($result);
 
-            // while($row = mysqli_fetch_array($result)) {
-            //     echo "<tr>";
-            //     // echo "<td>" . $row['Sno'] . "</td>";
-            //     echo "<td>" . $row['Daytime'] . "</td>";
-            //     echo "<td>" . $row['FirstPeriod'] . "</td>";
-            //     echo "<td>" . $row['SecondPeriod'] . "</td>";
-            //     echo "</tr>"; 
-            // }
-            // $conn->close();
             global $conn;
             $sql = "SELECT * FROM examtimetable";
             $result = $conn->query($sql);
@@ -211,18 +188,9 @@ if (!$conn) {
                 // output data of each row
                
                 while($row = $result->fetch_assoc()) {
-                    // echo "id: " . $row["Daytime"]. " - Name: " . $row["FirstPeriod"]. " " . $row["SecondPeriod"]. "<br>";
-                    $json_array[]=$row;
-                // echo "<td>" . $row['Sno'] . "</td>";
-                    // echo "{"."""daytime""".": """ . $row["Daytime"].""",";
-                    // echo """FirstPeriod""".":""" .$row["FirstPeriod"].""",";
-                    // echo """SecondPeriod""".":""" .$row["SecondPeriod"];
-                    // echo """},";
-                        // echoecho '"FirstPeriod":' . ""$row['FirstPeriod']"";
-                    // echo '"SecondPeriod"' . ""$row['SecondPeriod']"}" ;
-                     
+                    $json_array[] = $row; 
                 }
-                // echo "]";
+                
                 echo json_encode($json_array);
             } else {
                 echo "0 results";

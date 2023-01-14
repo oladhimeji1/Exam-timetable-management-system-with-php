@@ -101,13 +101,8 @@ function LoginServer(){
             console.log('Not Sent');
         }
     };
-      xhttp.open("Get", "request.php?opr=Loginx" + "&password=" + password + "&username=" +username, true);
-      xhttp.send();
-    
-   
-
-   
-
+    xhttp.open("Get", "request.php?opr=Loginx" + "&password=" + password + "&username=" +username, true);
+    xhttp.send();
 }
 
 window.onload= function(){

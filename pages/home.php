@@ -24,6 +24,7 @@
             <h2></h2>
             
             <h2>Examination timetable mannagemnt system</h2>
+            <button id="truc" style="display: none;" title="Delete exam timetable in the database"><i class="fa fa-trash"></i></button>
             <button id="logout" title="Logout"><i class="fa fa-sign-out"></i></button>
         </ul>
     </nav>

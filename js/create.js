@@ -211,15 +211,13 @@ function loadall(){
 
             var obj = JSON.parse(str)
             console.log(obj.Sno);
-            // console.log(xhttp.responseText);
-            // document.getElementsByClassName('noRec').innerHTML = '';
-            //document.getElementById("tab").innerHTML = "<tr><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th></tr>" + xhttp.responseText;
         } else {
 
         }
     };
 
-xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadall", true);
+xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadall", true);
+// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadall", true);
 xhttp.send();
 
 }
@@ -231,7 +229,7 @@ function updateExam(){
     var venuex = venue.value.toUpperCase();
     var supervisorx = supervisor.value.toUpperCase();
 
-    console.log(supervisorx)
+    // console.log(supervisorx)
     var xhttp = new XMLHttpRequest();
         
     xhttp.onreadystatechange = function() {
@@ -244,21 +242,17 @@ function updateExam(){
             str = $.trim(str.replace('Document',''));
 
             console.log(str);
-            
-
-            // var obj = JSON.parse(str)
-            // console.log(obj.Sno);
-            // console.log(xhttp.responseText);
-            // document.getElementsByClassName('noRec').innerHTML = '';
-            //document.getElementById("tab").innerHTML = "<tr><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th></tr>" + xhttp.responseText;
         } else {
           console.log('not')
         }
     }
 
-xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&daytimex=" + daytimex +
+xhttp.open("Get", "http://localhost/timetable/request.php?opr=updatexam"  + "&daytimex=" + daytimex +
  "&firstperiodx=" + firstperiodx + "&secondperiodx=" + secondperiodx +
  "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
+// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&daytimex=" + daytimex +
+//  "&firstperiodx=" + firstperiodx + "&secondperiodx=" + secondperiodx +
+//  "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
 xhttp.send();
 
 }
