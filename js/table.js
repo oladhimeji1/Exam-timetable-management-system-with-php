@@ -1,10 +1,10 @@
-
 var username;
 var ola
 
 $(document).ready(()=>{
     // loadTimeTable4();
     loadTimeTable2();
+    todaydatex();
 
     username = sessionStorage.getItem('username');
     // loadRecord()   
@@ -200,3 +200,31 @@ xhttp.send();
 
 
 });
+
+
+function todaydatex() {
+    var x = new Date()
+    var ampm = x.getHours() >= 12 ? ' PM' : ' AM';
+    var hrs =  x.getHours()
+    var mins = x.getMinutes()
+    var secs = x.getSeconds()
+
+    if(hrs > 12){
+      hrs = hrs - 12;
+    }
+
+    if(mins < 10){
+      mins = '0' + mins
+    }
+
+    if(secs < 10){
+      secs = '0' + secs
+    }
+
+    var x1 = x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear(); 
+    console.log(x1);
+    var x2 = hrs + ":" +  mins + ":" +  secs + ":" + ampm;
+
+    document.getElementById('divClock').innerHTML = x2;
+    //Display_Clock();
+ }
