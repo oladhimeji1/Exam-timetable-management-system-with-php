@@ -218,22 +218,13 @@ function loadall(){
         }
     };
 
-xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadall", true);
-// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadall", true);
+// xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadall", true);
+xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadall", true);
 xhttp.send();
 
 }
 
 function updateExam(){
-<<<<<<< HEAD
-    var daytimex =  daytime.value.toUpperCase();
-    var firstperiodx = firstperiod.value.toUpperCase();
-    var secondperiodx = secondperiod.value.toUpperCase(); 
-    var venuex = venue.value.toUpperCase();
-    var supervisorx = supervisor.value.toUpperCase();
-
-    // console.log(supervisorx)
-=======
      
     // var firstperiodx = firstperiod.value.toUpperCase();
     // var secondperiodx = secondperiod.value.toUpperCase(); 
@@ -254,7 +245,6 @@ function updateExam(){
      console.log(venuex);
      console.log(supervisorx);
      
->>>>>>> 106bbca12ffe966d0c6786214370974b76c1c5aa
     var xhttp = new XMLHttpRequest();
         
     xhttp.onreadystatechange = function() {
@@ -272,18 +262,9 @@ function updateExam(){
         }
     }
 
-<<<<<<< HEAD
-xhttp.open("Get", "http://localhost/timetable/request.php?opr=updatexam"  + "&daytimex=" + daytimex +
- "&firstperiodx=" + firstperiodx + "&secondperiodx=" + secondperiodx +
- "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
-// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&daytimex=" + daytimex +
-//  "&firstperiodx=" + firstperiodx + "&secondperiodx=" + secondperiodx +
-//  "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
-=======
 xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + datex +
  "&dayx=" + dayx + "&timex=" + timex +
  "&course=" + course + "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
->>>>>>> 106bbca12ffe966d0c6786214370974b76c1c5aa
 xhttp.send();
 
 window.location.reload();

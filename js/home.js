@@ -59,8 +59,8 @@ $('#truc').click(()=>{
         }
     };
 
-    xhttp.open("Get", "http://localhost/timetable/request.php?opr=cleartable", true);
-    // xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=cleartable", true);
+    // xhttp.open("Get", "http://localhost/timetable/request.php?opr=cleartable", true);
+    xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=cleartable", true);
     xhttp.send();
     }else{}
     
