@@ -142,33 +142,33 @@ xhttp.send();
 
 }
 
-function loadTimeTable4(){
-    console.log('kkkkkkkkkk');
-    var xhttp = new XMLHttpRequest();
+// function loadTimeTable4(){
+//     console.log('kkkkkkkkkk');
+//     var xhttp = new XMLHttpRequest();
         
-    xhttp.onreadystatechange = function() {
+//     xhttp.onreadystatechange = function() {
         
-        if (this.readyState == 4 && this.status == 200){
+//         if (this.readyState == 4 && this.status == 200){
 
-            str = xhttp.responseText;
-            str = str.replace(/<\/?[^>]+>/gi, '');
-            str = str.trim(str.replace('Ajax',''));
-            str = $.trim(str.replace('Document',''));
+//             str = xhttp.responseText;
+//             str = str.replace(/<\/?[^>]+>/gi, '');
+//             str = str.trim(str.replace('Ajax',''));
+//             str = $.trim(str.replace('Document',''));
 
-            console.log(str);
-            console.log(xhttp.responseText);
+//             console.log(str);
+//             console.log(xhttp.responseText);
             
-            document.getElementById("tab").innerHTML ="<tr><th>S/N</th><th>Date</th><th>Day</th><th>Time</th><th>Course</th><th>Venue</th><th>Supervisor</th></tr>" + xhttp.responseText;
-        } else {
+//             document.getElementById("tab").innerHTML ="<tr><th>S/N</th><th>Date</th><th>Day</th><th>Time</th><th>Course</th><th>Venue</th><th>Supervisor</th></tr>" + xhttp.responseText;
+//         } else {
 
-        }
-    };
+//         }
+//     };
 
-// xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable4", true);
-xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable4", true);
-xhttp.send();
+// // xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadTimeTable4", true);
+// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable4", true);
+// xhttp.send();
 
-}
+// }
 
 $('#truc').click(()=>{
     var xhttp = new XMLHttpRequest();
@@ -246,17 +246,17 @@ function todaydatex() {
             console.log(str);
             // console.log(xhttp.responseText);
             
-          //var tadayN = '2023-01-09'
+          var todayN = '2023-01-09'
             // var stringx = xhttp.responseText;
             // stringx = stringx.toUpperCase();
-            // document.getElementById("tab").innerHTML =stringx.fontsize(10);
+            document.getElementById("tab").innerHTML = xhttp.responseText;
             // console.log('call2');
         } else {
 
         }
     };
 
-    xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadtoday" , true);
+    xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadtoday" + "&todayN=" + todayN , true);
     xhttp.send();
 
 

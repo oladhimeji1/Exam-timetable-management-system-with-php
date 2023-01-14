@@ -248,8 +248,9 @@ if (!$conn) {
 
         
         function loadtoday(){
+            $todayN =  $_REQUEST['todayN'];
             global $conn;
-            $sql = "SELECT * FROM examtimetable WHERE Datex= '2023-01-09'  ORDER BY Datex ASC";
+            $sql = "SELECT * FROM examtimetable WHERE Datex=  $todayN  ORDER BY Datex ASC";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
