@@ -122,26 +122,20 @@ function loadall(){
         }
     };
 
-xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadall", true);
-// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadall", true);
+// xhttp.open("Get", "http://localhost/timetable/request.php?opr=loadall", true);
+xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadall", true);
 xhttp.send();
 
 }
 
 function updateExam(){
+     
     datex =  datex.value.toUpperCase();
     dayx = dayx.value.toUpperCase();
     timex = timex.value.toUpperCase();
     course = course.value.toUpperCase(); 
     venuex = venuex.value.toUpperCase(); 
     supervisorx = supervisorx.value.toUpperCase(); 
-
-    //  console.log(course);
-    //  console.log(datex);
-    //  console.log(dayx);
-    //  console.log(timex);
-    //  console.log(venuex);
-    //  console.log(supervisorx);
      
     var xhttp = new XMLHttpRequest();
         
@@ -155,7 +149,7 @@ function updateExam(){
             str = $.trim(str.replace('Document',''));
 
             console.log(str);
-            alert()
+            alert(str);
         } else {
           console.log('not')
         }
@@ -165,6 +159,9 @@ xhttp.open("Get", "http://localhost/timetable/request.php?opr=updatexam"  + "&da
 "&dayx=" + dayx + "&timex=" + timex +
 "&course=" + course + "&venuex=" + venuex + "&supervisorx=" + supervisorx, true);
 
+// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + datex +
+//  "&dayx=" + dayx + "&timex=" + timex +
+//  "&course=" + course + "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
 // xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + datex +
 //  "&dayx=" + dayx + "&timex=" + timex +
 //  "&course=" + course + "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);

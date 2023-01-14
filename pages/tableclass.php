@@ -16,50 +16,7 @@
             <p>Loading, pleass wait...</p>
             </div>
         </div>
-        <table id="tab2">
-            <tr>
-                <th></th>
-                <th>8:00 - 9:00</th>
-                <th>9:00 - 10:00</th>
-                <th>8:00 - 9:00</th>
-                <th>10:00 - 11:00</th>
-            </tr>
-            <tr>
-                <td>Mon</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Tue</td>
-                <td>Com102 / LLR1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Wed</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Thur</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Fri</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+        <table id="tab2"></table>
     </div>
 
     

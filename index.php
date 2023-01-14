@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <marquee style="color: white;" behavior="" direction="">Exam timetable management system by <b>ND 2 students</b></marquee>
+        <marquee style="color: rgb(0, 179, 255);" behavior="" direction="">Exam timetable management system by <b>ND 2 students</b></marquee>
         
         <div class="loadery">
             <div class="loaderx">

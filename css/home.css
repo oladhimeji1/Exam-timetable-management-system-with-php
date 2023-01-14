@@ -9,18 +9,18 @@ ul{
     color: white;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(16, 147, 161);
+    background-color: green;
     padding: 20px 40px;
 }
 .btn{
     padding: 5px;
-    background-color: rgb(16, 147, 161);
+    background-color: green;
     color: white;
-    border: 1px solid rgb(16, 147, 161);
+    border: 1px solid green;
 }
 .btn:hover{
     background-color: rgb(255, 255, 255);
-    color: rgb(16, 147, 161);
+    color: green;
     cursor: pointer;
 }
 .school-logo{
@@ -32,12 +32,12 @@ ul{
 }
 .sidebar-item:hover{
     background-color: white;
-    color: rgb(16, 147, 161);
+    color: green;
     cursor: pointer;
 }
 .sidebar{
     display: block;
-    background-color: rgb(16, 147, 161);
+    background-color: green;
     padding: 20px 0;
     width: 13rem;
     height: 82vh;
@@ -46,7 +46,7 @@ ul{
 .sub-menue{
     display: none;
     background-color: rgb(244, 244, 244);;
-    color: rgb(16, 147, 161);
+    color: green;
 }
 .sub-menue li{
     cursor: pointer;
@@ -55,7 +55,7 @@ ul{
     list-style-type: none;
 }
 .sub-menue li:hover{
-    background-color:  rgb(0, 179, 255);
+    background-color:  green;
     color: rgb(255, 255, 255);
 }
 .sub-menue li{
@@ -64,8 +64,8 @@ ul{
     list-style-type: none;
 }
 .frame{
-    background: rgb(0, 179, 255);
-    /* background: url(../img/aeroplane1.jpg); */
+    /* background: rgba(0, 128, 0, 0.534); */
+    background: url(../img/Kaduna-Poly.jpg);
     position: absolute;
     top: 70px;
     left: 13rem;
@@ -81,12 +81,12 @@ ul{
 }
 .student-rec, tr, th, td{
     border-collapse: collapse;
-    border: 1px solid rgb(16, 147, 161);
+    border: 1px solid green;
     padding: 15px;
-    color: rgb(16, 147, 161);
+    color: green;
 }
 .class-desc{
-    color: rgb(16, 147, 161);
+    color: green;
     padding: 0 10px 0 10px;
     text-align: center;
 }
@@ -95,14 +95,14 @@ ul{
     padding: 5px;
     outline: none;
     display: block;
-    border: 1px solid rgb(16, 147, 161);
+    border: 1px solid green;
 }
 .register-student{
     margin: 30px auto;
-    border: 1px solid rgb(16, 147, 161);
+    border: 1px solid green;
     width: 17rem;
     padding: 35px;
-    color: rgb(16, 147, 161);
+    color: green;
 }
 .in{
     width: 15.8rem;

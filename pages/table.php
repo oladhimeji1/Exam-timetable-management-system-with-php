@@ -16,6 +16,7 @@
             <p>Loading, pleass wait...</p>
             </div>
         </div>
+        <table id="todayt"></table>
         <div class="today" id="today">
             <div>
                 <p id="">Today, Monday</p>
@@ -32,7 +33,9 @@
                 <p id="secondtime">11:00 - 01:00</p>
             </div>
         </div>
+
         <table id="tab"></table>
+        
     </div>
 
     

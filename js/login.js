@@ -14,35 +14,6 @@ $('#btny').click(()=>{
 
     })
     
-    // const _data = {
-    //     username: username,
-    //     password: password
-    // }
-
-    // fetch('http://localhost:3000/login', {
-    //     method: 'POST',
-    //     body: JSON.stringify(_data),
-    //     headers: {'Content-type': 'application/json; charset=utf-8'}
-    // })
-    // .then(response => response.json())
-    // // .then(response => response.text())
-    // .then(data => {
-    //     console.log(data)
-    //     if(data == ![]){
-    //         $('.msgbox').slideDown(500);
-    //         $('.msgbox').delay(3000);
-    //         $('.msgbox').slideUp(500);
-    //     }else{
-    //         $('.loadery').show(500)
-    //         $('.loadery').delay(2000)
-    //         $('.loadery').hide(500, ()=>{
-    //             window.location.assign('./pages/home.html')
-    //         })
-    //     }
-    // })
-    // .catch(err => console.log(err));
-
-    
 });
 
 
@@ -116,39 +87,18 @@ window.onload= function(){
     loadTimeTable3();
    
    }
-   else{
+   else if (str2=="admin"){
     $("#truc").show();
     loadTimeTable4();
+   
+   }
+   else{
+    // $("#truc").show();
+    // loadTimeTable4();
 
    }
     //loadTimeTable1();
 }
-// function loadTimeTable1(){
-
-//     var xhttp = new XMLHttpRequest();
-        
-//     xhttp.onreadystatechange = function() {
-        
-//         if (this.readyState == 4 && this.status == 200){
-
-//             str = xhttp.responseText;
-//             str = str.replace(/<\/?[^>]+>/gi, '');
-//             str = str.trim(str.replace('Ajax',''));
-//             str = $.trim(str.replace('Document',''));
-
-//             console.log(str);
-//             // console.log(xhttp.responseText);
-//             // document.getElementsByClassName('noRec').innerHTML = '';
-//             document.getElementById("tab").innerHTML = "<tr><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th></tr>" + xhttp.responseText;
-//         } else {
-
-//         }
-//     };
-
-// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=loadTimeTable1", true);
-// xhttp.send();
-
-// }
 
 
 

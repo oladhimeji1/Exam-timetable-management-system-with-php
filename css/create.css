@@ -24,7 +24,7 @@ body{
     padding: 5px;
     border-radius: 5px;
     outline: none;
-    border: 2px solid rgb(0, 179, 255);
+    border: 2px solid green;
     width: 15rem;
     position: relative;
     margin: 2px 0;
@@ -32,8 +32,8 @@ body{
 .btn{
     padding: 7px;
     border-radius: 5px;
-    border: 2px solid rgb(0, 179, 255);
-    background-color: rgb(0, 179, 255);
+    border: 2px solid green;
+    background-color: green;
     color: white;
     /* margin: 18px auto; */
     width: 9rem;
@@ -41,7 +41,7 @@ body{
     cursor: pointer;
 }
 fieldset{
-    border: 2px solid rgb(0, 179, 255);
+    border: 2px solid green;
 }
 .btn:hover{
     background-color: rgb(3, 77, 108);
