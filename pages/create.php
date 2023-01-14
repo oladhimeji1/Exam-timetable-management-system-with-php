@@ -35,12 +35,11 @@
                         <button id="btn-next" class="btn">Submit</button>
                     </div>
 
-<<<<<<< HEAD
-=======
-                </div> -->
+
+                </div> 
 
                 <div class="inner-content">
-                    <div></div>
+                    <!-- <div></div>
                     <div>
                         <label for="dayx">day</label>
                         <input type="text" id="dayx"><br><br>
@@ -54,7 +53,7 @@
                         <input type="text" id="venue"><br><br>
                         <label for="supervisor">supervisor</label>
                         <input type="text" id="supervisor">
-                    </div>
+                    </div> -->
                     <!-- <div>
                         <select name="fri2" class="user-input" id="fri2">
                             <option value="">-- Code --</option>
@@ -115,7 +114,7 @@
                             <option value="London">London</option>
                         </select>
                     </div> -->
->>>>>>> 106bbca12ffe966d0c6786214370974b76c1c5aa
+
                 </div>
 
             <!-- <button id="btn-next" class="btn btn-next">Submit</button> -->

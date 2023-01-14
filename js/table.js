@@ -170,8 +170,6 @@ xhttp.send();
 
 }
 
-<<<<<<< HEAD
-=======
 $('#truc').click(()=>{
     var xhttp = new XMLHttpRequest();
         
@@ -202,4 +200,3 @@ xhttp.send();
 
 
 });
->>>>>>> 106bbca12ffe966d0c6786214370974b76c1c5aa
