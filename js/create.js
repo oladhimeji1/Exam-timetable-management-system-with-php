@@ -155,13 +155,13 @@ function updateExam(){
         }
     }
 
-xhttp.open("Get", "http://localhost/timetable/request.php?opr=updatexam"  + "&datex=" + datex +
-"&dayx=" + dayx + "&timex=" + timex +
-"&course=" + course + "&venuex=" + venuex + "&supervisorx=" + supervisorx, true);
+// xhttp.open("Get", "http://localhost/timetable/request.php?opr=updatexam"  + "&datex=" + datex +
+// "&dayx=" + dayx + "&timex=" + timex +
+// "&course=" + course + "&venuex=" + venuex + "&supervisorx=" + supervisorx, true);
 
-// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + datex +
-//  "&dayx=" + dayx + "&timex=" + timex +
-//  "&course=" + course + "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
+xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + datex +
+ "&dayx=" + dayx + "&timex=" + timex +
+ "&course=" + course + "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
 // xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + datex +
 //  "&dayx=" + dayx + "&timex=" + timex +
 //  "&course=" + course + "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
