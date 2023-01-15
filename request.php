@@ -266,7 +266,7 @@ function loadtoday(){
 
         }
     } else {
-        echo "TIME TABLE NOT FOUND PLEASE CREATE ONE";
+        echo "NO EXAMS TODAY VIEW TIMETABLE FOR NEXT EXAM DATE";
     }
     $conn->close();
 
