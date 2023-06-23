@@ -18,8 +18,9 @@ body{
     margin: 8rem auto;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    display: block;
+    display: flex;
     justify-content: center;
+    align-items: center;
     padding: 50px 50px;
 }
 .user-input{
@@ -43,9 +44,8 @@ body{
     cursor: pointer;
 }
 .btn:hover{
-    background-color: rgb(3, 77, 108);
-    border: 2px solid rgb(3, 77, 108);
-    color: white;
+    background-color: rgb(2, 102, 2);
+    border: 2px solid rgb(2, 102, 2);
 }
 .btn:active{
     background-color: crimson;
@@ -60,15 +60,22 @@ body{
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.866);
     position: absolute;
-    top: 15rem;
-    left: 35rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+/* .load-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
 .loadery{
     z-index: 9999999;
     display: none;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.127);
+    background-color: rgba(0, 0, 0, 0.511);
 }
 .loader{
     margin: 2px auto;

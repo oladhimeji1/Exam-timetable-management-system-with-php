@@ -4,28 +4,37 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .content{
-    width: 80%;
-    margin: 10px auto;
-    background-color: rgba(255, 255, 255, 0.864);
+    /* width: 30%; */
+    margin: 5px 20px;
+    /* background-color: rgba(255, 255, 255, 0.864); */
     border-radius: 5px;
-    display: block;
-    justify-content: center;
-    padding: 5px 50px;
-}
-.inner-content div{
-    margin: 5px 20px 10px;
-    display: block;
-}
-.inner-content{
     display: flex;
     justify-content: space-around;
+    padding: 25px 50px;
+}
+
+.inner-content{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.864);
+     width: 30rem;
+     margin: 0px 20px;
+     /* background-color: rgba(255, 255, 255, 0.864); */
+     border-radius: 5px;
+     /* display: flex;
+     justify-content: space-around; */
+     padding: 25px 50px;
+}
+.btn-cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
 .user-input{
-    padding: 5px;
+    padding: 10px 5px;
     border-radius: 5px;
     outline: none;
     border: 2px solid green;
-    width: 15rem;
+    width: 25rem;
     position: relative;
     margin: 2px 0;
 }

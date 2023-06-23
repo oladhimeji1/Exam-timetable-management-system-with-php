@@ -16,7 +16,7 @@
             <p>Loading, pleass wait...</p>
             </div>
         </div>
-        <table id="tab2"></table>
+        <table class='table-class' id="tab2"></table>
     </div>
 
     

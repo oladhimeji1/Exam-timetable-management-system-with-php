@@ -16,7 +16,7 @@
             <p>Loading, pleass wait...</p>
             </div>
         </div>
-        <table id="todayt"></table>
+        <!-- <table id="todayt"></table> -->
         <div class="today" id="today">
             <div>
                 <p id="">Today, Monday</p>

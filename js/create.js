@@ -138,34 +138,32 @@ function updateExam(){
     supervisorx = supervisorx.value.toUpperCase(); 
      
     var xhttp = new XMLHttpRequest();
-        
-    xhttp.onreadystatechange = function() {
-        
-        if (this.readyState == 4 && this.status == 200){
+    
+    if(!datex && !dayx && !timex && !course && !venuex && !supervisorx){
+        alert('Please ensure all fields are filled!')
+    } else {
+        xhttp.onreadystatechange = function() {
+            
+            if (this.readyState == 4 && this.status == 200){
 
-            str = xhttp.responseText;
-            str = str.replace(/<\/?[^>]+>/gi, '');
-            str = str.trim(str.replace('Ajax',''));
-            str = $.trim(str.replace('Document',''));
+                str = xhttp.responseText;
+                str = str.replace(/<\/?[^>]+>/gi, '');
+                str = str.trim(str.replace('Ajax',''));
+                str = $.trim(str.replace('Document',''));
 
-            console.log(str);
-            alert(str);
-        } else {
-          console.log('not')
+                // console.log(str);
+                // alert(str);
+            } else {
+            console.log('not')
+            }
         }
+
+        xhttp.open("Get", "http://localhost/timetable/request.php?opr=updatexam"  + "&datex=" + datex +
+        "&dayx=" + dayx + "&timex=" + timex +
+        "&course=" + course + "&venuex=" + venuex + "&supervisorx=" + supervisorx, true);
+
+        xhttp.send();
+
+        window.location.reload(true);
     }
-
-xhttp.open("Get", "http://localhost/timetable/request.php?opr=updatexam"  + "&datex=" + datex +
-"&dayx=" + dayx + "&timex=" + timex +
-"&course=" + course + "&venuex=" + venuex + "&supervisorx=" + supervisorx, true);
-
-// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + datex +
-//  "&dayx=" + dayx + "&timex=" + timex +
-//  "&course=" + course + "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
-// xhttp.open("Get", "http://localhost:122/Exam-timetable-management-system-with-php/request.php?opr=updatexam"  + "&datex=" + datex +
-//  "&dayx=" + dayx + "&timex=" + timex +
-//  "&course=" + course + "&venuex=" + venuex + "&supervisorx=" +supervisorx, true);
-xhttp.send();
-
-window.location.reload(true);
 }

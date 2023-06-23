@@ -2,7 +2,7 @@ var username;
 
 $(document).ready(()=>{
     username = sessionStorage.getItem('username');
-    document.getElementById('username').innerHTML = username.toLocaleUpperCase();
+    document.getElementById('username').innerHTML = username.toLowerCase();
     // loadRecord();
 })
 
@@ -37,7 +37,7 @@ $('#logout').click(()=>{
 });
 
 $('#truc').click(()=>{
-    if(confirm('Are you sure you wnt to delete the timetable in the databade?')){
+    if(confirm('Are you sure you want to delete the timetable in the databade?')){
         var xhttp = new XMLHttpRequest();
         
         xhttp.onreadystatechange = function() {
@@ -47,10 +47,7 @@ $('#truc').click(()=>{
             str = xhttp.responseText;
             str = str.replace(/<\/?[^>]+>/gi, '');
             str = str.trim(str.replace('Ajax',''));
-            str = $.trim(str.replace('Document',''));
-
-            console.log(str);
-            // console.log(xhttp.responseText);
+            str = $.trim(str.replace('Document','')); 
             
             document.getElementById("tab").innerHTML = "<tr><th>Day/Date</th><th>8:30-10:30</th><th>11:00-1:00</th><th>Venue</th><th>Supervisor</th></tr>" + xhttp.responseText;
             console.log('call2');

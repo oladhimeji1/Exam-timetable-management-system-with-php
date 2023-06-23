@@ -260,7 +260,7 @@ function loadtoday(){
 
         }
     } else {
-        echo "TIME TABLE NOT FOUND PLEASE CREATE ONE";
+        echo "You do not have any exam today, check timetable below for more details.";
     }
     $conn->close();
 
